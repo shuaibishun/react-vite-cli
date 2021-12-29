@@ -11,22 +11,6 @@
         "lint:style": "stylelint '**/*.{css,less,scss,sass}'",
         "lint:style-fix": "stylelint '**/*.{css,less,scss,sass}' --fix"
     },
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint commitlint.config.js -E HUSKY_GIT_PARAMS",
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "src/**/*.{js,jsx,ts,tsx}": [
-            "prettier --write",
-            "eslint --ext '.js,.jsx,.ts,.tsx' --fix"
-        ],
-        "*.{css,less,scss,sass}": [
-            "prettier --write",
-            "stylelint"
-        ]
-    },
     "dependencies": {
         "@arco-design/theme-line": "^0.0.3",
         "@arco-design/web-react": "^2.27.1",
