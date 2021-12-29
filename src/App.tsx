@@ -1,6 +1,5 @@
 import { Button, Input, Space } from '@arco-design/web-react'
 import { useMouse } from 'ahooks'
-import { keyBy } from 'lodash-es'
 import { useState } from 'react'
 import styled from 'styled-components'
 
@@ -17,22 +16,10 @@ function App() {
         pageY: number
     } = useMouse()
 
-    const b = [
-        {
-            a: 2,
-            b: 3
-        },
-        {
-            a: 5,
-            b: 6
-        }
-    ]
-
-    const c = 1
-
     const Hr = styled.div`
         font-size: 24px;
         color: #3dc;
+        line-height: 24px;
     `
 
     return (
