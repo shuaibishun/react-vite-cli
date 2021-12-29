@@ -8,6 +8,15 @@ function App() {
     const [count, setCount] = useState(0)
     const [valueN, setValueN] = useState('')
 
+    const state: {
+        screenX: number
+        screenY: number
+        clientX: number
+        clientY: number
+        pageX: number
+        pageY: number
+    } = useMouse()
+
     const b = [
         {
             a: 2,
@@ -20,8 +29,6 @@ function App() {
     ]
 
     const c = 1
-
-    console.log(keyBy(b, 'a'), b[0].a, c)
 
     const Hr = styled.div`
         font-size: 24px;
