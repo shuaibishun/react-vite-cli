@@ -8,15 +8,6 @@ function App() {
     const [count, setCount] = useState(0)
     const [valueN, setValueN] = useState('')
 
-    const state: {
-        screenX: number
-        screenY: number
-        clientX: number
-        clientY: number
-        pageX: number
-        pageY: number
-    } = useMouse()
-
     const b = [
         {
             a: 2,
