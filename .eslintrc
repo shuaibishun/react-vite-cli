@@ -53,6 +53,13 @@
         },
         "import/resolver": {
             // 默认使用根目录 tsconfig.json
+            "alias": {
+                "map": [
+                    ["@", "./src/"],
+                    ["@comp", "./src/components/"]
+                ],
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            },
             "typescript": {
                 // 从 <roo/>@types 读取类型定义
                 "alwaysTryTypes": true

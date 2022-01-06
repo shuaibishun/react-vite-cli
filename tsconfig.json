@@ -15,6 +15,10 @@
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "react-jsx",
+        "paths": {
+            "@/*": ["./src/*"],
+            "@comp/*": ["./src/components/*"]
+        }
     },
     "include": ["vite.config.*", "windi.config.*", "commitlint.config.*", "src/**/*", "src/**/*.ts", "src/**/*.tsx"],
     "exclude": ["dist", "node_modules"]
