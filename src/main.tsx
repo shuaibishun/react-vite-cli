@@ -4,7 +4,7 @@ import '@/assets/main.less'
 import { ConfigProvider } from '@arco-design/web-react'
 import * as ReactDOM from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
-import { RecoilRoot, selector, useRecoilState, useRecoilValue } from 'recoil'
+import { RecoilRoot } from 'recoil'
 
 import App from './App'
 
