@@ -1,4 +1,4 @@
-## vscode 安装 eslint stylelint Tailwind Css intelliSense
+## vscode 安装 eslint stylelint Tailwind css intelliSense
 
 ## vscode settings.json 添加
 
